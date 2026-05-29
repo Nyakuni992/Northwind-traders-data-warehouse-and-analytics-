@@ -217,7 +217,7 @@ WHERE quantityPerUnit LIKE '%ounce%'
    OR quantityPerUnit LIKE '%packages%'
    OR quantityPerUnit LIKE '%bottles%'
     
-===========================
+--===========================
 -- Checking Shippers
 --=========================================================
 -- Check for unwanted spaces
