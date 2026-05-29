@@ -216,48 +216,8 @@ WHERE quantityPerUnit LIKE '%ounce%'
    OR quantityPerUnit LIKE '%pkgs%'
    OR quantityPerUnit LIKE '%packages%'
    OR quantityPerUnit LIKE '%bottles%'
--- Data Structure Standardization 
-SELECT
-    productID,
-    productName,
-    CASE
-        WHEN quantityPerUnit LIKE '%[0-9]% - %[0-9]%box%' THEN REPLACE(quantityPerUnit,'box','boxes')
-        WHEN quantityPerUnit LIKE '%[0-9]% - %[0-9]%jar%' THEN REPLACE(quantityPerUnit,'jar','jars')
-        WHEN quantityPerUnit LIKE '%[0-9]% - %[0-9]bottle%' THEN REPLACE(quantityPerUnit,'bottle','bottles')
-        WHEN quantityPerUnit LIKE '%[0-9]% - %[0-9]%bag%' THEN REPLACE(quantityPerUnit,'bag','bags')
-        WHEN quantityPerUnit LIKE '%[0-9]% - %[0-9]%pkg%' THEN REPLACE(quantityPerUnit,'pkg','pkgs')
-        WHEN quantityPerUnit LIKE '%[0-9]% - %[0-9]%can%' THEN REPLACE(quantityPerUnit,'can','cans')
-        WHEN quantityPerUnit LIKE '%[0-9]% - %[0-9]%tin%' THEN REPLACE(quantityPerUnit,'tin','tins')
-        WHEN quantityPerUnit LIKE '%[0-9]% - %[0-9]%glass%' THEN REPLACE(quantityPerUnit,'glass','glasses')
-        WHEN quantityPerUnit LIKE '%[0-9]% - %[0-9]%piece%' THEN REPLACE(quantityPerUnit,'piece','pieces')
-        WHEN quantityPerUnit LIKE '%[0-9]% - %[0-9]%pie%' THEN REPLACE(quantityPerUnit,'pie','pies')
-        WHEN quantityPerUnit LIKE '%[0-9]% - %[0-9]%round%' THEN REPLACE(quantityPerUnit,'round','rounds')
-        WHEN quantityPerUnit LIKE '%[0-9]% - %[0-9]%bar%' THEN REPLACE(quantityPerUnit,'bar','bars')
-        ELSE quantityPerUnit
-        END AS quantityPerUnit,
-    -- Extract First numeric value
-    LEFT(quantityPerUnit, PATINDEX('%[^0-9]%', quantityPerUnit + ' ') - 1) AS productCount,
-     CASE
-        WHEN quantityPerUnit LIKE '%box%' THEN 'box'
-        WHEN quantityPerUnit LIKE '%jar%' THEN 'jar'
-        WHEN quantityPerUnit LIKE '%bottle%' THEN 'bottle'
-        WHEN quantityPerUnit LIKE '%bag%' THEN 'bag'
-        WHEN quantityPerUnit LIKE '%pkg%' THEN 'pkg'
-        WHEN quantityPerUnit LIKE '%can%' THEN 'can'
-        WHEN quantityPerUnit LIKE '%tin%' THEN 'tin'
-        WHEN quantityPerUnit LIKE '%glass%' THEN 'glass'
-        WHEN quantityPerUnit LIKE '%piece%' THEN 'piece'
-        WHEN quantityPerUnit LIKE '%pie%' THEN 'pie'
-        WHEN quantityPerUnit LIKE '%round%' THEN 'round'
-        WHEN quantityPerUnit LIKE '%bar%' THEN 'bar'
-        ELSE NULL
-        END AS Packaging,
-    unitPrice,
-    discontinued,
-    categoryID
-FROM bronze.products
-
---=========================================================
+    
+===========================
 -- Checking Shippers
 --=========================================================
 -- Check for unwanted spaces
