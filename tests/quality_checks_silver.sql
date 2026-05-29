@@ -16,10 +16,12 @@ Usage Notes:
     - Review and resolve any inconsistencies found during the checks.
 ===============================================================================
 */
----------------------
--- Categories
----------------------
+--================================================
+-- Checking Categories
+--================================================
+
 -- Check for nulls and duplicates in primary key
+-- Expectation is Non
 SELECT  
 categoryID,
 COUNT(*) as totalCount
@@ -33,15 +35,17 @@ description
 FROM bronze.categories
 WHERE categoryName != UPPER(TRIM(categoryName)) OR description != UPPER(TRIM(description))
 
--- Customers
+--==============================================
+-- Checking Customers
+--==============================================
 -- Check for nulls & duplicates in primary key
+-- Expectation is Non
 SELECT
 customerID,
 COUNT(*) as totalCount
 FROM bronze.customers
 GROUP BY customerID
 HAVING COUNT(*) > 1 OR customerID IS NULL
--- Data standardisation
 -- Check for unwanted spaces
 SELECT
 companyName,
@@ -59,8 +63,12 @@ SELECT DISTINCT
 country 
 FROM bronze.customers
 
--- Employees
+--==================================================
+-- Checking Employees
+--==================================================
+
 --Check for duplicates and nulls in primary key
+-- Expectation is Non
 SELECT
 employeeID,
 COUNT(*) as totalCount
@@ -80,8 +88,12 @@ title != UPPER(TRIM(title)) OR
 city != UPPER(TRIM(city)) OR
 country != UPPER(TRIM(country))
 
---Orders
+--==================================================
+--Checking Orders
+--==================================================
+    
 -- Check for nulls & duplicates in primary key
+-- Expectation is Non
 SELECT
 orderID,
 COUNT(*)
@@ -135,8 +147,12 @@ freight
 FROM bronze.orders
 WHERE freight < 0
 
+--=================================================
 -- Order details
+--=================================================
+    
 -- Check nulls in foreign key
+-- Expectation is Non
 SELECT
 orderID,
 productID
@@ -163,8 +179,12 @@ unitPrice < 0 OR
 quantity< 0 OR
 discount < 0
 
--- Products
+--===================================================
+-- Checking Products
+--===================================================
+    
 --Check for nulls and duplicates in primary keys
+-- Expectation is Non
 SELECT
 productID,
 COUNT(*)
@@ -237,10 +257,9 @@ SELECT
     categoryID
 FROM bronze.products
 
-
-
-
--- Shippers
+--=========================================================
+-- Checking Shippers
+--=========================================================
 -- Check for unwanted spaces
 SELECT
 companyName
