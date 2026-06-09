@@ -121,7 +121,7 @@ Develop a comprehensive analytics and reporting solution that leverages the Nort
 ### Installation & Setup
 #### 1. Clone the Repository
 Bash
-[git clone](https://github.com/Nyakuni992/sql_hospital_data_records_project.git)
+[git clone](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-.git)
 #### 2. Initialize the Database:
 Open SSMS and connect to your local instance.
 Run the script scripts/bronze[/init_database.sql ](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/blob/main/scripts/init_database.sql)to create the database structure.
