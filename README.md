@@ -55,7 +55,7 @@ This project involves:
 
 Building the Data Warehouse (Data Engineering)
 ### Objective:
-Design and implement a modern data warehouse using SQL Server to consolidate hospital encounter data, enabling analytical reporting and data-driven decision-making.
+Design and implement a modern data warehouse using SQL Server to consolidate Northwind Traders' orders, customer, product, employee, and shipping data into a centralized analytics platform that supports business intelligence, reporting, and data-driven decision-making.
 
 ### Specifications:
 - **Data Sources:** Ingest structured data provided as CSV files into a staging layer.
