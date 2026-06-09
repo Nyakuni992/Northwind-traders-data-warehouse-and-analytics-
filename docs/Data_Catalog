@@ -1,0 +1,92 @@
+# Data Catalog for Gold Layer
+
+## Overview
+The Gold Layer represents data at the business level, organized specifically for analytics and reporting. 
+It is made up of dimension tables and a fact table designed to measure and analyze key business metrics.
+---
+
+### 1. **gold.dim_customers**
+- **Purpose:** Stores customers details including demographic and geographic data.
+- **Columns:**
+
+| Column Name       | Data Type         | Description                                                                                                                                     |
+|-------------------|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| CustomerKey       | INT               | Surrogate key uniquely identifying each Customer record in the dimension table.                                                                 |
+| CustomerID        | VARCHAR(50)       | Unique identifier assigned to each Customer, (e.g 'BOLID').                                                                        |
+| CompanyName       | NVARCHAR(50)      | The name of the Customer's company.                                                                                                             |
+| PrimaryContactName| NVARCHAR(50)      | The name of the Customer's primary contact.                                                                                                     | 
+| ContactTitle      | NVARCHAR(50)      | The job title of the primary contact for the Customer                                                                                           |        
+| City              | NVARCHAR(50)      | The city where the customer is located                                                                                                          |
+| Country           | DATE              | The country where the customer is located                                                                                                       |                                                                                                                 |
+
+
+---
+
+### 2. **gold.dim_employees**
+- **Purpose:** Provides the names and geographic details of the employees.
+- **Columns:** 
+
+| Column Name         | Data Type         | Description                                                                                                                                  |
+|---------------------|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| EmployeeKey         | INT               | Surrogate key uniquely identifying each Employee record in the dimension table.                                                              |
+| EmployeeID          | INT               | Unique identifier for each employee.                                                                                                         |              
+| EmployeeName        | VARCHAR(50)       | The full name of each Employee.                                                                                                               |
+| JobTitle            | VARCHAR(50)       | The employee's job title.                                                                                                                    |
+| ManagerID           | INT               | The ID of the employee's manager.                                                                                                            |    
+| City                | VARCHAR(50)       | The city where the employee works                                                                                                            |
+| Country             | VARCHAR(50)       | The country where the employee works                                                                                                         |
+
+
+---
+
+### 3. **gold.dim_products**
+- **Purpose:** Stores the all product details
+- **Columns:** 
+
+| Column Name               | Data Type         | Description                                                                                                                             |
+|---------------------------|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| ProductKey                | INT               | Surrogate key uniquely identifying the products in the dimension table.                                                                 |
+| ProductID                 | INT               | Unique identifier for each product.                                                                                                     |                                 
+| ProductName               | VARCHAR(50)       | The name of the product.                                                                                                                |                       
+| QuantityPerUnitDescription| VARCHAR(50)       | Describes the quantity of the product per package                                                                                       |
+| CategoryID                | INT               | Unique identifier for each product category.                                                                                            |                                                    
+| CategoryName              | VARCHAR(50)       | The name of the category.                                                                                                               |                                                  
+| CategoryDescription       | VARCHAR(50)       | A description of the category and its products.                                                                                         |                                                      
+| PackageCount              | INT               | Number of individual units, items,or packages contained within the product package.                                                     |
+| Packaging                 | NVARCHAR(50)      | The outer container in which the product is packaged.                                                                                   |                                                                       
+| UnitPrice                 | FLOAT             | The current price per unit of the product (USD)                                                                                         |
+| Discontinued              | INT               | Indicates with a 1 if the product has been discontinued.                                                                                |                                                                       
+
+
+---
+
+### 3. **gold.dim_shippers**
+- **Purpose:** Stores the details of the shipping company 
+- **Columns:** 
+
+| Column Name               | Data Type         | Description                                                                                                                             |
+|---------------------------|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| ShipperKey                | INT               | Surrogate key uniquely identifying the shippers in the dimension table.                                                                 |
+| ShipperID                 | INT               | Unique identifier for each shipper.                                                                                                     |                                 
+| ShipperName               | VARCHAR(50)       | The name of the company that provides the shipping services.                                                                            |                                 
+
+---
+
+### 4. **gold.fact_orders**
+- **Purpose:** Stores all orders and order details
+- **Columns:**
+
+| Column Name                | Data Type         | Description                                                                                                                           |
+|----------------------------|-------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| OrderID                    | INT               | Unique identifier for each order.                                                                                                     |
+| CustomerKey                | INT               | Surrogate key linking the orders to the customer dimension table.                                                                     |
+| ProductKey                 | INT               | Surrogate key linking the orders to the product dimension table.                                                                      |
+| EmployeeKey                | INT               | Surrogate key linking the orders to the employee dimension table.                                                                     |
+| ShipperKey                 | INT               | Surrogate key linking the orders to the shipper dimension table.                                                                      |
+| OrderDate                  | DATE              | The date when the order was placed.                                                                                                   |
+| RequiredDate               | DATE              | The date when the customer requested the order to be delivered                                                                        |
+| ShippedDate                | DATE              | The date when the order was shipped                                                                                                   |
+| Quantity                   | INT               | The number of units being ordered                                                                                                     |
+| UnitPrice                  | FLOAT             | The price per unit of the product at the time the order was placed (USD - discount not included).                                     |
+| DiscountRate               | FLOAT             | The discount percentage applied to the price per unit.                                                                                |
+| FreightCost                | FLOAT             | The shipping cost for the order (USD).                                                                                                |
