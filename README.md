@@ -55,6 +55,7 @@ Building the Data Warehouse (Data Engineering)
 Design and implement a modern data warehouse using SQL Server to consolidate hospital encounter data, enabling analytical reporting and data-driven decision-making.
 
 #### Specifications:
+
 Data Sources: Ingest structured data provided as CSV files into a staging layer.
 Data Quality: Perform data cleansing, validation, and transformation to resolve inconsistencies and ensure integrity.
 Data Integration: Integrate source data into a unified dimensional data model (fact and dimension tables) optimized for analytical queries.
