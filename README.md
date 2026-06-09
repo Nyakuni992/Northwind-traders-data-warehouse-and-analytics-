@@ -100,7 +100,7 @@ The Gold Layer follows a Star Schema design, providing a streamlined and high-pe
 ## 📈 Project Management & Roadmap
 
 This project was managed using a structured SDLC (Software Development Life Cycle) approach. You can view the full project roadmap, task breakdown, and progress tracking on my public Notion page: 
-🔗 ![View My Project Roadmap on Notion](https://pleasant-coast-def.notion.site/Northwind-Traders-Project-1803700e152f837c8398817c1d95ace7)
+![View My Project Roadmap on Notion](https://pleasant-coast-def.notion.site/Northwind-Traders-Project-1803700e152f837c8398817c1d95ace7)
 ### Key Milestones Tracked:
 - **Requirement Analysis & Design:** Initial scoping and architecture planning.
 - **Medallion Pipeline Development:** Granular task tracking for Bronze, Silver, and Gold layer implementations.
