@@ -61,7 +61,7 @@ Design and implement a modern data warehouse using SQL Server to consolidate hos
 - **Data Sources:** Ingest structured data provided as CSV files into a staging layer.
 - **Data Quality:** Perform data cleansing, validation, and transformation to resolve inconsistencies and ensure integrity.
 - **Data Integration:** Integrate source data into a unified dimensional data model (fact and dimension tables) optimized for analytical queries.
-- **Scope:** 
+- **Scope:** Focus on the current state of business entities, ensuring that only the most recent and valid records are represented in the analytical layer.
 - **Documentation:** Provide comprehensive data model documentation to support business stakeholders and analytics teams.
 
 ---
