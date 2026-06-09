@@ -1,9 +1,10 @@
- ## ☄️ Northwind-traders-data-warehouse-and-Sales-analytics-
+ # ☄️ Northwind-traders-data-warehouse-and-Sales-analytics-
 
 Welcome to the Northwind Traders and Sales analytics repository.
 This project presents a comprehensive end-to-end data warehousing and analytics solution built using SQL Server, ETL pipelines, dimensional modeling, and BI reporting.
 
-### 🎯Business Problem
+---
+## 🎯Business Problem
 
 Northwind Traders generates large volumes of sales, customer, product, and shipping data. However, raw operational data alone does not provide the insights needed to support business decisions.
 This project centralizes and transforms data into an analytical warehouse that enables stakeholders to:
@@ -14,7 +15,8 @@ This project centralizes and transforms data into an analytical warehouse that e
 - Identify revenue trends
 - Support KPI-driven decision making
 
-### 📖Project Overview
+---
+## 📖Project Overview
 
 This project involves:
 - **Data Architecture:** Designing a Modern Data Warehouse Using Medallion Architecture Bronze, Silver, and Gold layers.
@@ -22,7 +24,7 @@ This project involves:
 - **Data Modeling:** Developing fact and dimension tables optimized for analytical queries.
 - **Analytics & Reporting:** Developing SQL-driven reports and dashboards that transform data into clear, actionable insights.
 
-### 🛠 Skills Demonstrated
+## 🛠 Skills Demonstrated
 
 **Data Architecture & Engineering**
 - Data Warehouse Design
@@ -48,88 +50,97 @@ This project involves:
 - Data Storytelling
 - Business Reporting
 
-### 🚀 Scope & Technical Specifications
-Building the Data Warehouse (Data Engineering)
+---
+## 🚀 Scope & Technical Specifications
 
-#### Objective:
+Building the Data Warehouse (Data Engineering)
+### Objective:
 Design and implement a modern data warehouse using SQL Server to consolidate hospital encounter data, enabling analytical reporting and data-driven decision-making.
 
-#### Specifications:
+### Specifications:
 - **Data Sources:** Ingest structured data provided as CSV files into a staging layer.
 - **Data Quality:** Perform data cleansing, validation, and transformation to resolve inconsistencies and ensure integrity.
 - **Data Integration:** Integrate source data into a unified dimensional data model (fact and dimension tables) optimized for analytical queries.
 - **Scope:** 
 - **Documentation:** Provide comprehensive data model documentation to support business stakeholders and analytics teams.
 
-### 🏙️ Data Architecture
-The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers: 
+---
+## 🏙️ Data Architecture
+
 ![Data Architecture](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/blob/main/docs/Data%20Architecture.drawio.png)
+The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers: 
 - **Bronze Layer:** Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
 - **Silver Layer:** This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
 
 - **Gold Layer:** Contains business-ready, curated data structured into a star schema to support reporting, analytics, and KPI-driven insights.
 
-### ⭐ Data Model (Star Schema)
+---
+## ⭐ Data Model (Star Schema)
+
 ![Star Schema](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/blob/main/docs/Data%20Mart(Star%20Schema).drawio.png)
 The Gold Layer follows a Star Schema design, providing a streamlined and high-performance structure for analytics and reporting. Data is organized into a central fact table and related dimension tables, all exposed through SQL views for easy consumption by reporting and BI tools.
 - **Fact Table:** gold.fact_orders
 - **Dimension Tables:** gold.dim_customers, gold.dim_products, gold.dim_employees, and gold.dim_shippers
+[View Full Data Model Documentation →]
 
-### ⚙️ Tech Stack
+---
+## ⚙️ Tech Stack
 
-- Category	Tools
-- Database	SQL Server Express
-- Query Tool	SSMS
-- Data Modeling	Draw.io
-- Version Control	Git & GitHub
-- Documentation	Notion
-- Visualization	Tableau Public
-- Data Format	CSV
+| Category | Tools |
+|---|---|
+| Database | SQL Server Express |
+| Query Tool | SSMS |
+| Data Modeling | Draw.io |
+| Version Control | Git & GitHub |
+| Documentation | Notion |
+| Visualization | Tableau Public |
+| Data Format | CSV |
 
-### 📈 Project Management & Roadmap
-This project was managed using a structured SDLC (Software Development Life Cycle) approach. You can view the full project roadmap, task breakdown, and progress tracking on my public Notion page: 🔗 View My Project Roadmap on Notion
+---
+## 📈 Project Management & Roadmap
 
-Key Milestones Tracked:
+This project was managed using a structured SDLC (Software Development Life Cycle) approach. You can view the full project roadmap, task breakdown, and progress tracking on my public Notion page: 
+🔗 ![View My Project Roadmap on Notion](https://app.notion.com/p/Northwind-Traders-Project-1803700e152f837c8398817c1d95ace7)
+### Key Milestones Tracked:
 - **Requirement Analysis & Design:** Initial scoping and architecture planning.
 - **Medallion Pipeline Development:** Granular task tracking for Bronze, Silver, and Gold layer implementations.
 - **Quality Assurance:** Dedicated tasks for schema validation and data integrity checks.
 - **Quality Assurance:** Dedicated tasks for schema validation and data integrity checks.
 - **Documentation & Version Control:** Integrated milestones for Draw.io diagrams and Git commits
 
-### 📊 BI: Analytics & Reporting (Data Analysis)
-
-#### Objective:
+## 📊 BI: Analytics & Reporting (Data Analysis)
+### Objective:
 Develop a comprehensive analytics and reporting solution that leverages the Northwind Traders data warehouse to track critical business KPIs. Through SQL-based analysis and interactive dashboards, the reporting layer provides insights into revenue growth, customer purchasing patterns, product performance, employee productivity, and shipping operations, supporting data-driven business decision-making.
 
-### 🚀 Getting Started
-#### Prerequisites
-Database Engine: SQL Server SQL Server Management Studio (SSMS) Tableau Desktop/Public
+## 🚀Getting Started
+### Prerequisites
+[Database Engine: SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/ssms/install/install)
+[Tableau Desktop/Public](https://www.tableau.com/products/public?utm_source=chatgpt.com) 
 
-#### Installation & Setup
-1. Clone the Repository
-Bash git clone
+### Installation & Setup
+#### 1. Clone the Repository
+Bash
+[git clone](https://github.com/Nyakuni992/sql_hospital_data_records_project.git)
+#### 2. Initialize the Database:
+Open SSMS and connect to your local instance.
+Run the script scripts/bronze[/init_database.sql ](https://github.com/Nyakuni992/sql_hospital_data_records_project/blob/main/Scripts/bronze/ddl_bronze.sql)to create the database structure.
+### 3. Ingest Raw Data:
+Place the CSV files from the [datasets/ folder](https://github.com/Nyakuni992/sql_hospital_data_records_project/tree/main/datasets) into your SQL Server's authorized import directory.
+### 4.Execute the [scripts/bronze/load_bronze.sql](https://github.com/Nyakuni992/sql_hospital_data_records_project/blob/main/Scripts/bronze/proc_load_bronze.sql) scripts.
+### 5.Run Transformations:
+Execute scripts in the [silver/ folder](https://github.com/Nyakuni992/sql_hospital_data_records_project/tree/main/Scripts/silver), followed by the [gold/ folder](https://github.com/Nyakuni992/sql_hospital_data_records_project/tree/main/Scripts/gold) to build the Galaxy Schema.
 
-2. Initialize the Database:
-Open SSMS and connect to your local instance. Run the script scripts/bronze/init_database.sql to create the database structure.
+### 5.View Analytics:
+Tableau Access: Open the .twbx (Packaged Workbook) located in the [reports/ folder](https://github.com/Nyakuni992/sql_hospital_data_records_project/tree/main/Reports/Tableau_dashboards).
 
-3. Ingest Raw Data:
-Place the CSV files from the datasets/ folder into your SQL Server's authorized import directory.
+## 📝Technical Notes
+- Tableau Connection: Data was transformed and curated in SQL Server; Gold-layer tables were exported to CSV for visualization in Tableau Public due to the software's connection limitations for local SQL instances.
+- Data Integrity: The exported CSVs represent the final, cleaned "Gold" layer, ensuring the dashboards reflect the logic applied within the SQL Server environment. Refer to the SQL scripts in [reports/export data](https://github.com/Nyakuni992/sql_hospital_data_records_project/tree/main/Reports/Export_data_tableau_csv) which correspond exactly to the data structures seen in the Tableau "Data Source" tab.
 
-4.Execute the scripts/bronze/load_bronze.sql scripts.
-5.Run Transformations:
-Execute scripts in the silver/ folder, followed by the gold/ folder to build the Galaxy Schema.
+## 📂 Repository Structure
 
-5.View Analytics:
-Tableau Access: Open the .twbx (Packaged Workbook) located in the reports/ folder.
-
-### 📝 Technical Notes
-
-Tableau Connection: Data was transformed and curated in SQL Server; Gold-layer tables were exported to CSV for visualization in Tableau Public due to the software's connection limitations for local SQL instances.
-Data Integrity: The exported CSVs represent the final, cleaned "Gold" layer, ensuring the dashboards reflect the logic applied within the SQL Server environment. Refer to the SQL scripts in reports/export data which correspond exactly to the data structures seen in the Tableau "Data Source" tab.
-
-### 📂 Repository Structure
-
-Northwind Traders and Sales Analytics/
+### Northwind Traders and Sales Analytics/
 │
 ├── datasets/                           # Raw datasets used for the project (CSV)
 │
