@@ -169,10 +169,12 @@ Tableau Access: Open the .twbx (Packaged Workbook) located in the [reports/ fold
 ├── README.md                           # Project overview and instructions
 ├── LICENSE                             # License information for the repository
 └── .gitignore                          # Files and directories to be ignored by Git
-
+```
+---
 ### 🛡️ License
 This project is licensed under the MIT License. allowing you to freely use, modify, and share it, provided proper attribution is given.
 
+----
 ### 🌟 About Me
 Hello! I’m Aramiru Nyakuni Rebecca, a professional accountant transitioning into the field of data analysis. I am dedicated to honing my skills and expertise in data analytics while leveraging data-driven insights and predictive analysis to help organizations achieve their long-term objectives.
 
