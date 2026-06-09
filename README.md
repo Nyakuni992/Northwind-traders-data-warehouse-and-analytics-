@@ -1,9 +1,10 @@
- ☄️ Northwind-traders-data-warehouse-and-Sales-analytics-
+ ## ☄️ Northwind-traders-data-warehouse-and-Sales-analytics-
 
 Welcome to the Northwind Traders and Sales analytics repository.
 This project presents a comprehensive end-to-end data warehousing and analytics solution built using SQL Server, ETL pipelines, dimensional modeling, and BI reporting.
 
-🎯 Business Problem
+### 🎯 Business Problem
+
 Northwind Traders generates large volumes of sales, customer, product, and shipping data. However, raw operational data alone does not provide the insights needed to support business decisions.
 This project centralizes and transforms data into an analytical warehouse that enables stakeholders to:
 - Monitor sales performance
@@ -13,19 +14,27 @@ This project centralizes and transforms data into an analytical warehouse that e
 - Identify revenue trends
 - Support KPI-driven decision making
 
-📖 Project Overview
+### 📖 Project Overview
+
 This project involves:
 Data Architecture: Designing a Modern Data Warehouse Using Medallion Architecture Bronze, Silver, and Gold layers.
 ETL Pipelines: Extracting, transforming, and loading data from source systems into the warehouse.
 Data Modeling: Developing fact and dimension tables optimized for analytical queries.
 Analytics & Reporting: Developing SQL-driven reports and dashboards that transform data into clear, actionable insights.
 
-🛠 Skills Demonstrated
+### 🛠 Skills Demonstrated
+
 Data Architecture & Engineering
 - Data Warehouse Design
 - Medallion Architecture
 - ETL Development
 - Data Cleansing & Transformation
+
+Data Modeling
+- Dimensional Modeling
+- Star Schema Design
+- Fact & Dimension Modeling
+- Data Quality Validation
 
 Business Analytics
 - Sales Performance Analysis
@@ -39,61 +48,64 @@ Reporting & Visualization
 - Data Storytelling
 - Business Reporting
 
-🚀Scope & Technical Specifications
+### 🚀 Scope & Technical Specifications
 Building the Data Warehouse (Data Engineering)
-Objective:
+
+#### Objective:
 Design and implement a modern data warehouse using SQL Server to consolidate hospital encounter data, enabling analytical reporting and data-driven decision-making.
 
-Specifications:
+#### Specifications:
 Data Sources: Ingest structured data provided as CSV files into a staging layer.
 Data Quality: Perform data cleansing, validation, and transformation to resolve inconsistencies and ensure integrity.
 Data Integration: Integrate source data into a unified dimensional data model (fact and dimension tables) optimized for analytical queries.
 Scope: Exclude encounters occurring after a recorded patient death date to maintain logical and clinical consistency across KPIs.
 Documentation: Provide comprehensive data model documentation to support business stakeholders and analytics teams.
 
-🏙️Data Architecture
+### 🏙️ Data Architecture
 The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers: Data Architecture
 
 Bronze Layer: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
 Silver Layer: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
 Gold Layer: Contains business-ready, curated data structured into a star schema to support reporting, analytics, and KPI-driven insights.
 
-⭐Data Model (Star Schema)
-Star Schema
+### ⭐ Data Model (Star Schema)
+#### Star Schema
 This Gold Layer structure was designed using a Star Schema to improve analytical performance and simplify reporting.
 It consists of data separated into Facts and dimensions stored as Views
 Fact: gold.fact_orders
 Dimension: dim_customers, dim_products, dim_employees and dim_shippers 
 
-⚙️ Tech Stack
-Category	Tools
-Database	SQL Server Express
-Query Tool	SSMS
-Data Modeling	Draw.io
-Version Control	Git & GitHub
-Documentation	Notion
-Visualization	Tableau Public
-Data Format	CSV
+### ⚙️ Tech Stack
 
-📈Project Management & Roadmap
+- Category	Tools
+- Database	SQL Server Express
+- Query Tool	SSMS
+- Data Modeling	Draw.io
+- Version Control	Git & GitHub
+- Documentation	Notion
+- Visualization	Tableau Public
+- Data Format	CSV
+
+### 📈 Project Management & Roadmap
 This project was managed using a structured SDLC (Software Development Life Cycle) approach. You can view the full project roadmap, task breakdown, and progress tracking on my public Notion page: 🔗 View My Project Roadmap on Notion
 
 Key Milestones Tracked:
-Requirement Analysis & Design: Initial scoping and architecture planning.
-Medallion Pipeline Development: Granular task tracking for Bronze, Silver, and Gold layer implementations.
-Quality Assurance: Dedicated tasks for schema validation and data integrity checks.
-Quality Assurance: Dedicated tasks for schema validation and data integrity checks.
-Documentation & Version Control: Integrated milestones for Draw.io diagrams and Git commits
+- Requirement Analysis & Design: Initial scoping and architecture planning.
+- Medallion Pipeline Development: Granular task tracking for Bronze, Silver, and Gold layer implementations.
+- Quality Assurance: Dedicated tasks for schema validation and data integrity checks.
+- Quality Assurance: Dedicated tasks for schema validation and data integrity checks.
+- Documentation & Version Control: Integrated milestones for Draw.io diagrams and Git commits
 
-📊 BI: Analytics & Reporting (Data Analysis)
-Objective:
+### 📊 BI: Analytics & Reporting (Data Analysis)
+
+#### Objective:
 Develop a comprehensive analytics and reporting solution that leverages the Northwind Traders data warehouse to track critical business KPIs. Through SQL-based analysis and interactive dashboards, the reporting layer provides insights into revenue growth, customer purchasing patterns, product performance, employee productivity, and shipping operations, supporting data-driven business decision-making.
 
-🚀Getting Started
-Prerequisites
+### 🚀 Getting Started
+#### Prerequisites
 Database Engine: SQL Server SQL Server Management Studio (SSMS) Tableau Desktop/Public
 
-Installation & Setup
+#### Installation & Setup
 1. Clone the Repository
 Bash git clone
 
@@ -110,10 +122,13 @@ Execute scripts in the silver/ folder, followed by the gold/ folder to build the
 5.View Analytics:
 Tableau Access: Open the .twbx (Packaged Workbook) located in the reports/ folder.
 
-📝Technical Notes
+### 📝 Technical Notes
+
 Tableau Connection: Data was transformed and curated in SQL Server; Gold-layer tables were exported to CSV for visualization in Tableau Public due to the software's connection limitations for local SQL instances.
 Data Integrity: The exported CSVs represent the final, cleaned "Gold" layer, ensuring the dashboards reflect the logic applied within the SQL Server environment. Refer to the SQL scripts in reports/export data which correspond exactly to the data structures seen in the Tableau "Data Source" tab.
-📂 Repository Structure
+
+### 📂 Repository Structure
+
 Hopital-data-warehouse-project/
 │
 ├── datasets/                           # Raw datasets used for the project (CSV)
@@ -143,11 +158,11 @@ Hopital-data-warehouse-project/
 ├── LICENSE                             # License information for the repository
 └── .gitignore                          # Files and directories to be ignored by Git
 
-🛡️ License
+### 🛡️ License
 This project is licensed under the MIT License. allowing you to freely use, modify, and share it, provided proper attribution is given.
 
-🌟 About Me
+### 🌟 About Me
 Hello! I’m Aramiru Nyakuni Rebecca, a professional accountant transitioning into the field of data analysis. I am dedicated to honing my skills and expertise in data analytics while leveraging data-driven insights and predictive analysis to help organizations achieve their long-term objectives.
 
-🤝 Connect With Me
+### 🤝 Connect With Me
 Portfolio LinkedIn Gmail
