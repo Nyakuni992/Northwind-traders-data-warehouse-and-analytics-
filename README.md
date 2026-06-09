@@ -124,12 +124,12 @@ Bash
 [git clone](https://github.com/Nyakuni992/sql_hospital_data_records_project.git)
 #### 2. Initialize the Database:
 Open SSMS and connect to your local instance.
-Run the script scripts/bronze[/init_database.sql ](https://github.com/Nyakuni992/sql_hospital_data_records_project/blob/main/Scripts/bronze/ddl_bronze.sql)to create the database structure.
+Run the script scripts/bronze[/init_database.sql ](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/blob/main/scripts/init_database.sql)to create the database structure.
 ### 3. Ingest Raw Data:
-Place the CSV files from the [datasets/ folder](https://github.com/Nyakuni992/sql_hospital_data_records_project/tree/main/datasets) into your SQL Server's authorized import directory.
-### 4.Execute the [scripts/bronze/load_bronze.sql](https://github.com/Nyakuni992/sql_hospital_data_records_project/blob/main/Scripts/bronze/proc_load_bronze.sql) scripts.
+Place the CSV files from the [datasets/ folder](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/tree/main/datasets) into your SQL Server's authorized import directory.
+### 4.Execute the scriptsin the [bronze/Folder](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/tree/main/scripts/bronze) scripts.
 ### 5.Run Transformations:
-Execute scripts in the [silver/ folder](https://github.com/Nyakuni992/sql_hospital_data_records_project/tree/main/Scripts/silver), followed by the [gold/ folder](https://github.com/Nyakuni992/sql_hospital_data_records_project/tree/main/Scripts/gold) to build the Galaxy Schema.
+Execute scripts in the [silver/ folder](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/tree/main/scripts/silver), followed by the [gold/ folder](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/blob/main/scripts/gold/ddl_gold.sql) to build the Galaxy Schema.
 
 ### 5.View Analytics:
 Tableau Access: Open the .twbx (Packaged Workbook) located in the [reports/ folder](https://github.com/Nyakuni992/sql_hospital_data_records_project/tree/main/Reports/Tableau_dashboards).
