@@ -55,23 +55,30 @@ Building the Data Warehouse (Data Engineering)
 Design and implement a modern data warehouse using SQL Server to consolidate hospital encounter data, enabling analytical reporting and data-driven decision-making.
 
 #### Specifications:
-- Data Sources: Ingest structured data provided as CSV files into a staging layer.
-- Data Quality: Perform data cleansing, validation, and transformation to resolve inconsistencies and ensure integrity.
-- Data Integration: Integrate source data into a unified dimensional data model (fact and dimension tables) optimized for analytical queries.
-- Scope: 
-- Documentation: Provide comprehensive data model documentation to support business stakeholders and analytics teams.
+Data Sources: Ingest structured data provided as CSV files into a staging layer.
+
+Data Quality: Perform data cleansing, validation, and transformation to resolve inconsistencies and ensure integrity.
+
+Data Integration: Integrate source data into a unified dimensional data model (fact and dimension tables) optimized for analytical queries.
+
+Scope: 
+
+Documentation: Provide comprehensive data model documentation to support business stakeholders and analytics teams.
 
 ### 🏙️ Data Architecture
 The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers: Data Architecture
-- Bronze Layer: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
-- Silver Layer: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
-- Gold Layer: Contains business-ready, curated data structured into a star schema to support reporting, analytics, and KPI-driven insights.
+Bronze Layer: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
+
+Silver Layer: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
+
+Gold Layer: Contains business-ready, curated data structured into a star schema to support reporting, analytics, and KPI-driven insights.
 
 ### ⭐ Data Model (Star Schema)
 #### Star Schema
 The Gold Layer follows a Star Schema design, providing a streamlined and high-performance structure for analytics and reporting. Data is organized into a central fact table and related dimension tables, all exposed through SQL views for easy consumption by reporting and BI tools.
 
 Fact Table: gold.fact_orders
+
 Dimension Tables: gold.dim_customers, gold.dim_products, gold.dim_employees, and gold.dim_shippers
 
 ### ⚙️ Tech Stack
