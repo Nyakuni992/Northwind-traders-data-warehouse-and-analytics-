@@ -100,7 +100,7 @@ The Gold Layer follows a Star Schema design, providing a streamlined and high-pe
 ## 📈 Project Management & Roadmap
 
 This project was managed using a structured SDLC (Software Development Life Cycle) approach. You can view the full project roadmap, task breakdown, and progress tracking on my public Notion page: 
-🔗 ![View My Project Roadmap on Notion](https://app.notion.com/p/Northwind-Traders-Project-1803700e152f837c8398817c1d95ace7)
+🔗 ![View My Project Roadmap on Notion](https://pleasant-coast-def.notion.site/Northwind-Traders-Project-1803700e152f837c8398817c1d95ace7)
 ### Key Milestones Tracked:
 - **Requirement Analysis & Design:** Initial scoping and architecture planning.
 - **Medallion Pipeline Development:** Granular task tracking for Bronze, Silver, and Gold layer implementations.
@@ -127,16 +127,17 @@ Open SSMS and connect to your local instance.
 Run the script scripts/bronze[/init_database.sql ](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/blob/main/scripts/init_database.sql)to create the database structure.
 ### 3. Ingest Raw Data:
 Place the CSV files from the [datasets/ folder](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/tree/main/datasets) into your SQL Server's authorized import directory.
-### 4.Execute the scriptsin the [bronze/Folder](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/tree/main/scripts/bronze) scripts.
+### 4.Execute the scripts in the bronze Folder
+[bronze/Folder](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/tree/main/scripts/bronze) scripts.
 ### 5.Run Transformations:
 Execute scripts in the [silver/ folder](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/tree/main/scripts/silver), followed by the [gold/ folder](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/blob/main/scripts/gold/ddl_gold.sql) to build the Galaxy Schema.
 
 ### 5.View Analytics:
-Tableau Access: Open the .twbx (Packaged Workbook) located in the [reports/ folder](https://github.com/Nyakuni992/sql_hospital_data_records_project/tree/main/Reports/Tableau_dashboards).
+Tableau Access: Open the .twbx (Packaged Workbook) located in the [reports/ folder]().
 
 ## 📝Technical Notes
 - Tableau Connection: Data was transformed and curated in SQL Server; Gold-layer tables were exported to CSV for visualization in Tableau Public due to the software's connection limitations for local SQL instances.
-- Data Integrity: The exported CSVs represent the final, cleaned "Gold" layer, ensuring the dashboards reflect the logic applied within the SQL Server environment. Refer to the SQL scripts in [reports/export data](https://github.com/Nyakuni992/sql_hospital_data_records_project/tree/main/Reports/Export_data_tableau_csv) which correspond exactly to the data structures seen in the Tableau "Data Source" tab.
+- Data Integrity: The exported CSVs represent the final, cleaned "Gold" layer, ensuring the dashboards reflect the logic applied within the SQL Server environment. Refer to the SQL scripts in [reports/export data]() which correspond exactly to the data structures seen in the Tableau "Data Source" tab.
 
 ## 📂 Repository Structure
 ```
