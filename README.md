@@ -3,7 +3,7 @@
 Welcome to the Northwind Traders and Sales analytics repository.
 This project presents a comprehensive end-to-end data warehousing and analytics solution built using SQL Server, ETL pipelines, dimensional modeling, and BI reporting.
 
-### 🎯 Business Problem
+### 🎯Business Problem
 
 Northwind Traders generates large volumes of sales, customer, product, and shipping data. However, raw operational data alone does not provide the insights needed to support business decisions.
 This project centralizes and transforms data into an analytical warehouse that enables stakeholders to:
@@ -14,35 +14,35 @@ This project centralizes and transforms data into an analytical warehouse that e
 - Identify revenue trends
 - Support KPI-driven decision making
 
-### 📖 Project Overview
+### 📖Project Overview
 
 This project involves:
-- Data Architecture: Designing a Modern Data Warehouse Using Medallion Architecture Bronze, Silver, and Gold layers.
-- ETL Pipelines: Extracting, transforming, and loading data from source systems into the warehouse.
-- Data Modeling: Developing fact and dimension tables optimized for analytical queries.
-- Analytics & Reporting: Developing SQL-driven reports and dashboards that transform data into clear, actionable insights.
+- **Data Architecture:** Designing a Modern Data Warehouse Using Medallion Architecture Bronze, Silver, and Gold layers.
+- **ETL Pipelines:** Extracting, transforming, and loading data from source systems into the warehouse.
+- **Data Modeling:** Developing fact and dimension tables optimized for analytical queries.
+- **Analytics & Reporting:** Developing SQL-driven reports and dashboards that transform data into clear, actionable insights.
 
 ### 🛠 Skills Demonstrated
 
-Data Architecture & Engineering
+**Data Architecture & Engineering**
 - Data Warehouse Design
 - Medallion Architecture
 - ETL Development
 - Data Cleansing & Transformation
 
-Data Modeling
+**Data Modeling**
 - Dimensional Modeling
 - Star Schema Design
 - Fact & Dimension Modeling
 - Data Quality Validation
 
-Business Analytics
+**Business Analytics**
 - Sales Performance Analysis
 - Customer Analysis
 - Product Performance Analysis
 - Revenue Trend Analysis
 
-Reporting & Visualization
+**Reporting & Visualization**
 - KPI Development
 - Dashboard Design
 - Data Storytelling
@@ -55,31 +55,25 @@ Building the Data Warehouse (Data Engineering)
 Design and implement a modern data warehouse using SQL Server to consolidate hospital encounter data, enabling analytical reporting and data-driven decision-making.
 
 #### Specifications:
-Data Sources: Ingest structured data provided as CSV files into a staging layer.
-
-Data Quality: Perform data cleansing, validation, and transformation to resolve inconsistencies and ensure integrity.
-
-Data Integration: Integrate source data into a unified dimensional data model (fact and dimension tables) optimized for analytical queries.
-
-Scope: 
-
-Documentation: Provide comprehensive data model documentation to support business stakeholders and analytics teams.
+- **Data Sources:** Ingest structured data provided as CSV files into a staging layer.
+- **Data Quality:** Perform data cleansing, validation, and transformation to resolve inconsistencies and ensure integrity.
+- **Data Integration:** Integrate source data into a unified dimensional data model (fact and dimension tables) optimized for analytical queries.
+- **Scope:** 
+- **Documentation:** Provide comprehensive data model documentation to support business stakeholders and analytics teams.
 
 ### 🏙️ Data Architecture
-The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers: Data Architecture
-Bronze Layer: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
+The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers: 
+**Data Architecture**
+- **Bronze Layer:** Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
+- **Silver Layer:** This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
 
-Silver Layer: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
-
-Gold Layer: Contains business-ready, curated data structured into a star schema to support reporting, analytics, and KPI-driven insights.
+- **Gold Layer:** Contains business-ready, curated data structured into a star schema to support reporting, analytics, and KPI-driven insights.
 
 ### ⭐ Data Model (Star Schema)
-#### Star Schema
+**Star Schema**
 The Gold Layer follows a Star Schema design, providing a streamlined and high-performance structure for analytics and reporting. Data is organized into a central fact table and related dimension tables, all exposed through SQL views for easy consumption by reporting and BI tools.
-
-Fact Table: gold.fact_orders
-
-Dimension Tables: gold.dim_customers, gold.dim_products, gold.dim_employees, and gold.dim_shippers
+- **Fact Table:** gold.fact_orders
+- **Dimension Tables:** gold.dim_customers, gold.dim_products, gold.dim_employees, and gold.dim_shippers
 
 ### ⚙️ Tech Stack
 
@@ -96,11 +90,11 @@ Dimension Tables: gold.dim_customers, gold.dim_products, gold.dim_employees, and
 This project was managed using a structured SDLC (Software Development Life Cycle) approach. You can view the full project roadmap, task breakdown, and progress tracking on my public Notion page: 🔗 View My Project Roadmap on Notion
 
 Key Milestones Tracked:
-- Requirement Analysis & Design: Initial scoping and architecture planning.
-- Medallion Pipeline Development: Granular task tracking for Bronze, Silver, and Gold layer implementations.
-- Quality Assurance: Dedicated tasks for schema validation and data integrity checks.
-- Quality Assurance: Dedicated tasks for schema validation and data integrity checks.
-- Documentation & Version Control: Integrated milestones for Draw.io diagrams and Git commits
+- **Requirement Analysis & Design:** Initial scoping and architecture planning.
+- **Medallion Pipeline Development:** Granular task tracking for Bronze, Silver, and Gold layer implementations.
+- **Quality Assurance:** Dedicated tasks for schema validation and data integrity checks.
+- **Quality Assurance:** Dedicated tasks for schema validation and data integrity checks.
+- **Documentation & Version Control:** Integrated milestones for Draw.io diagrams and Git commits
 
 ### 📊 BI: Analytics & Reporting (Data Analysis)
 
@@ -135,7 +129,7 @@ Data Integrity: The exported CSVs represent the final, cleaned "Gold" layer, ens
 
 ### 📂 Repository Structure
 
-Hopital-data-warehouse-project/
+Northwind Traders and Sales Analytics/
 │
 ├── datasets/                           # Raw datasets used for the project (CSV)
 │
