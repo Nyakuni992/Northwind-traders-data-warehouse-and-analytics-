@@ -17,10 +17,10 @@ This project centralizes and transforms data into an analytical warehouse that e
 ### 📖 Project Overview
 
 This project involves:
-Data Architecture: Designing a Modern Data Warehouse Using Medallion Architecture Bronze, Silver, and Gold layers.
-ETL Pipelines: Extracting, transforming, and loading data from source systems into the warehouse.
-Data Modeling: Developing fact and dimension tables optimized for analytical queries.
-Analytics & Reporting: Developing SQL-driven reports and dashboards that transform data into clear, actionable insights.
+- Data Architecture: Designing a Modern Data Warehouse Using Medallion Architecture Bronze, Silver, and Gold layers.
+- ETL Pipelines: Extracting, transforming, and loading data from source systems into the warehouse.
+- Data Modeling: Developing fact and dimension tables optimized for analytical queries.
+- Analytics & Reporting: Developing SQL-driven reports and dashboards that transform data into clear, actionable insights.
 
 ### 🛠 Skills Demonstrated
 
