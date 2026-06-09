@@ -165,4 +165,8 @@ This project is licensed under the MIT License. allowing you to freely use, modi
 Hello! I’m Aramiru Nyakuni Rebecca, a professional accountant transitioning into the field of data analysis. I am dedicated to honing my skills and expertise in data analytics while leveraging data-driven insights and predictive analysis to help organizations achieve their long-term objectives.
 
 ### 🤝 Connect With Me
-Portfolio LinkedIn Gmail
+[![Portfolio](https://img.shields.io/badge/Portfolio-Canva-00C4CC?logo=canva&logoColor=white)](https://rebekaharamiru.my.canva.site/portfolio)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rebecca-aramiru-3a699a12b/)
+[![Gmail](https://img.shields.io/badge/Email-Gmail-red?logo=gmail&logoColor=white)](mailto:nyanetah@gmail.com)
+
+
