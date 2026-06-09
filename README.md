@@ -63,7 +63,7 @@ Design and implement a modern data warehouse using SQL Server to consolidate hos
 
 ### 🏙️ Data Architecture
 The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers: 
-**Data Architecture**
+[Data Architecture](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/blob/main/docs/Data%20Architecture.drawio.png)
 - **Bronze Layer:** Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
 - **Silver Layer:** This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
 
