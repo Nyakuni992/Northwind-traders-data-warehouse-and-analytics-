@@ -139,7 +139,7 @@ Tableau Access: Open the .twbx (Packaged Workbook) located in the [reports/ fold
 - Data Integrity: The exported CSVs represent the final, cleaned "Gold" layer, ensuring the dashboards reflect the logic applied within the SQL Server environment. Refer to the SQL scripts in [reports/export data](https://github.com/Nyakuni992/sql_hospital_data_records_project/tree/main/Reports/Export_data_tableau_csv) which correspond exactly to the data structures seen in the Tableau "Data Source" tab.
 
 ## 📂 Repository Structure
-
+```
 ### Northwind Traders and Sales Analytics/
 │
 ├── datasets/                           # Raw datasets used for the project (CSV)
