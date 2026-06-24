@@ -77,7 +77,7 @@ The data architecture for this project follows Medallion Architecture Bronze, Si
 ---
 ## ⭐ Data Model (Star Schema)
 
-![Star Schema]()
+![Star Schema](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/blob/main/docs/Data%20Mart(Star%20Schema).drawio.png)
 The Gold Layer follows a Star Schema design, providing a streamlined and high-performance structure for analytics and reporting. Data is organized into a central fact table and related dimension tables, all exposed through SQL views for easy consumption by reporting and BI tools.
 - **Fact Table:** gold.fact_orders
 - **Dimension Tables:** gold.dim_customers, gold.dim_products, gold.dim_employees, and gold.dim_shippers
