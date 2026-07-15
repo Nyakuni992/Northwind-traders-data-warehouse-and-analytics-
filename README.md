@@ -111,9 +111,9 @@ This project was managed using a structured SDLC (Software Development Life Cycl
 ## 📊 BI: Analytics & Reporting (Data Analysis)
 ### Objective:
 Develop a comprehensive analytics and reporting solution that leverages the Northwind Traders data warehouse to track critical business KPIs. Through SQL-based analysis and interactive dashboards, the reporting layer provides insights into revenue growth, customer purchasing patterns, product performance, employee productivity, and shipping operations, supporting data-driven business decision-making.
-[Sales Dashboard](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/blob/main/docs/Sales%20Dashboard.png) 
-[Customer Dashboard](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/blob/main/docs/Customers%20Dashboard%20.png)
-[Operations Dashboard](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/blob/main/docs/Operational%20Dashboard.png)
+![Sales Dashboard](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/blob/main/docs/Sales%20Dashboard.png) 
+![Customer Dashboard](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/blob/main/docs/Customers%20Dashboard%20.png)
+![Operations Dashboard](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/blob/main/docs/Operational%20Dashboard.png)
 
 ## 🚀Getting Started
 ### Prerequisites
