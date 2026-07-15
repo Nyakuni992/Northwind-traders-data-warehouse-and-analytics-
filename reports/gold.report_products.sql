@@ -32,7 +32,7 @@ LEFT JOIN gold.dim_products p
 ON o.ProductKey = p.ProductKey
 WHERE p.ProductKey IS NOT NULL
 )
--- Product_Details: Consolidates 
+-- Product_Details: Provides a summary of key product metrics for each product.
 , Product_Details AS (
 SELECT
 ProductKey,
