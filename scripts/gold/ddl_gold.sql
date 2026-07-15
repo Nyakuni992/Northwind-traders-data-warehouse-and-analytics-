@@ -106,8 +106,9 @@ SELECT
     o.requiredDate   AS RequiredDate,
     o.shippedDate    AS ShippedDate,
     od.quantity      AS Quantity,
-    od.unitPrice     AS UnitPrice,
+    (od.unitPrice * (1 - od.discount)) AS SellingPrice,
     od.discount      AS DiscountRate,
+     od.quantity * (od.unitPrice * (1 - od.discount)) AS Sales,
     o.freight        AS FreightCost
 FROM silver.orders o
 LEFT JOIN silver.order_details od
