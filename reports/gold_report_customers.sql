@@ -10,6 +10,7 @@ This report supports customer segmentation, revenue analysis, and the identifica
 providing reliable insights for sales and business decision-making.
 =======================================================================
 */
+
 CREATE VIEW gold.report_customers AS
 WITH Base_Query AS (
 -- Base Query: Retrieves core columns from the tables
@@ -30,7 +31,7 @@ FROM gold.fact_orders o
 LEFT JOIN gold.dim_customers c
 ON o.CustomerKey = c.CustomerKey
 )
--- Customer query
+-- Customer query: Provides a summary of key customer metrics for each customer.
 , Customer_Details AS (
 SELECT
 CustomerKey,
