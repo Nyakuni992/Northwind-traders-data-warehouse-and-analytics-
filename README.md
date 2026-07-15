@@ -140,7 +140,7 @@ Tableau Access: Open the .twbx (Packaged Workbook) located in the [reports/ fold
 
 ## 📝Technical Notes
 - Tableau Connection: Data was transformed and curated in SQL Server; Gold-layer tables were exported to CSV for visualization in Tableau Public due to the software's connection limitations for local SQL instances.
-- Data Integrity: The exported CSVs represent the final, cleaned "Gold" layer, ensuring the dashboards reflect the logic applied within the SQL Server environment. Refer to the SQL scripts in [reports/export data](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/tree/main/reports/Dashboards) or the dataset in [tableau/dataset](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/tree/main/datasets/Data_set_tableau) which correspond exactly to the data structures seen in the Tableau "Data Source" tab.
+- Data Integrity: The exported CSVs represent the final, cleaned "Gold" layer, ensuring the dashboards reflect the logic applied within the SQL Server environment. Refer to the SQL scripts in [reports/export data](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/blob/main/scripts/gold/ddl_gold.sql) or the dataset in [tableau/dataset](https://github.com/Nyakuni992/Northwind-traders-data-warehouse-and-analytics-/tree/main/datasets/Data_set_tableau) which correspond exactly to the data structures seen in the Tableau "Data Source" tab.
 
 ## 📂 Repository Structure
 ```
