@@ -12,7 +12,7 @@ top-performing sales representatives, helping managers make informed decisions o
 */
 CREATE VIEW gold.report_employees AS
 WITH Base_Query AS (
--- Base Query: 
+-- Base Query: Retrieves core columns from tables.
 SELECT
 o.OrderID,
 o.OrderDate,
@@ -31,6 +31,7 @@ LEFT JOIN gold.dim_employees e
 ON e.EmployeeKey = o.EmployeeKey
 WHERE e.EmployeeKey IS NOT NULL
 )
+-- Employee Details: Provides a summary of key employee metrics for each employee.
 , Employee_Details AS (
 SELECT
 EmployeeKey,
