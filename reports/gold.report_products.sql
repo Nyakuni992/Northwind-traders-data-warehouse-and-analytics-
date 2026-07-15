@@ -9,6 +9,7 @@ This report supports product performance analysis, category comparisons, invento
 top- and low-performing products, providing actionable insights to drive data-informed business decisions.
 ======================================================================
 */
+
 CREATE VIEW gold.report_products AS 
 WITH Base_Query AS (
 -- Base Query: Retrieves core columns from the tables
