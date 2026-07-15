@@ -1,0 +1,78 @@
+﻿ProductKey,ProductID,ProductName,QuantityPerUnitDescription,CategoryID,CategoryName,CategoryDescription,PackageCount,Packaging,UnitPrice,Discontinued
+1,1,Chai,10 boxes x 20 bags,1,Beverages,"""Soft drinks, coffees, teas, beers, and ales""",10,box,18,0
+2,2,Chang,24 - 12 oz bottles,1,Beverages,"""Soft drinks, coffees, teas, beers, and ales""",24,bottle,19,0
+3,3,Aniseed Syrup,12 - 550 ml bottles,2,Condiments,"""Sweet and savory sauces, relishes, spreads, and seasonings""",12,bottle,10,0
+4,4,Chef Anton's Cajun Seasoning,48 - 6 oz jarss,2,Condiments,"""Sweet and savory sauces, relishes, spreads, and seasonings""",48,jar,22,0
+5,5,Chef Anton's Gumbo Mix,36 boxes,2,Condiments,"""Sweet and savory sauces, relishes, spreads, and seasonings""",36,box,21.35,1
+6,6,Grandma's Boysenberry Spread,12 - 8 oz jarss,2,Condiments,"""Sweet and savory sauces, relishes, spreads, and seasonings""",12,jar,25,0
+7,7,Uncle Bob's Organic Dried Pears,12 - 1 lb pkgss.,7,Produce,Dried fruit and bean curd,12,pkg,30,0
+8,8,Northwoods Cranberry Sauce,12 - 12 oz jarss,2,Condiments,"""Sweet and savory sauces, relishes, spreads, and seasonings""",12,jar,40,0
+9,9,Mishi Kobe Niku,18 - 500 g pkgss.,6,Meat & Poultry,Prepared meats,18,pkg,97,1
+10,10,Ikura,12 - 200 ml jarss,8,Seafood,Seaweed and fish,12,jar,31,0
+11,11,Queso Cabrales,1 kg pkg.,4,Dairy Products,Cheeses,1,pkg,21,0
+12,12,Queso Manchego La Pastora,10 - 500 g pkgss.,4,Dairy Products,Cheeses,10,pkg,38,0
+13,13,Konbu,2 kg box,8,Seafood,Seaweed and fish,2,box,6,0
+14,14,Tofu,40 - 100 g pkgss.,7,Produce,Dried fruit and bean curd,40,pkg,23.25,0
+15,15,Genen Shouyu,24 - 250 ml bottles,2,Condiments,"""Sweet and savory sauces, relishes, spreads, and seasonings""",24,bottle,15.5,0
+16,16,Pavlova,32 - 500 g boxeses,3,Confections,"""Desserts, candies, and sweet breads""",32,box,17.45,0
+17,17,Alice Mutton,20 - 1 kg tinss,6,Meat & Poultry,Prepared meats,20,tin,39,1
+18,18,Carnarvon Tigers,16 kg pkg.,8,Seafood,Seaweed and fish,16,pkg,62.5,0
+19,19,Teatime Chocolate Biscuits,10 boxes x 12 pieces,3,Confections,"""Desserts, candies, and sweet breads""",10,box,9.2,0
+20,20,Sir Rodney's Marmalade,30 gift boxes,3,Confections,"""Desserts, candies, and sweet breads""",30,box,81,0
+21,21,Sir Rodney's Scones,24 pkgs. x 4 pieces,3,Confections,"""Desserts, candies, and sweet breads""",24,pkg,10,0
+22,22,Gustaf's Knackebr÷d,24 - 500 g pkgss.,5,Grains & Cereals,"""Breads, crackers, pasta, and cereal""",24,pkg,21,0
+23,23,Tunnbr÷d,12 - 250 g pkgss.,5,Grains & Cereals,"""Breads, crackers, pasta, and cereal""",12,pkg,9,0
+24,24,Guarana Fantastica,12 - 355 ml canss,1,Beverages,"""Soft drinks, coffees, teas, beers, and ales""",12,can,4.5,1
+25,25,NuNuCaáNu¯-Nougat-Creme,20 - 450 g glasseses,3,Confections,"""Desserts, candies, and sweet breads""",20,glass,14,0
+26,26,GumbSr GummibSrchen,100 - 250 g bagss,3,Confections,"""Desserts, candies, and sweet breads""",100,bag,31.23,0
+27,27,Schoggi Schokolade,100 - 100 g piecess,3,Confections,"""Desserts, candies, and sweet breads""",100,piece,43.9,0
+28,28,R÷ssle Sauerkraut,25 - 825 g canss,7,Produce,Dried fruit and bean curd,25,can,45.6,1
+29,29,Thnringer Rostbratwurst,50 bags x 30 sausgs.,6,Meat & Poultry,Prepared meats,50,bag,123.79,1
+30,30,Nord-Ost Matjeshering,10 - 200 g glasseses,8,Seafood,Seaweed and fish,10,glass,25.89,0
+31,31,Gorgonzola Telino,12 - 100 g pkgss,4,Dairy Products,Cheeses,12,pkg,12.5,0
+32,32,Mascarpone Fabioli,24 - 200 g pkgss.,4,Dairy Products,Cheeses,24,pkg,32,0
+33,33,Geitost,500 g,4,Dairy Products,Cheeses,500,NULL,2.5,0
+34,34,Sasquatch Ale,24 - 12 oz bottles,1,Beverages,"""Soft drinks, coffees, teas, beers, and ales""",24,bottle,14,0
+35,35,Steeleye Stout,24 - 12 oz bottles,1,Beverages,"""Soft drinks, coffees, teas, beers, and ales""",24,bottle,18,0
+36,36,Inlagd Sill,24 - 250 g  jarss,8,Seafood,Seaweed and fish,24,jar,19,0
+37,37,Gravad lax,12 - 500 g pkgss.,8,Seafood,Seaweed and fish,12,pkg,26,0
+38,38,C(te de Blaye,12 - 75 cl bottles,1,Beverages,"""Soft drinks, coffees, teas, beers, and ales""",12,bottle,263.5,0
+39,39,Chartreuse verte,750 cc per bottle,1,Beverages,"""Soft drinks, coffees, teas, beers, and ales""",750,bottle,18,0
+40,40,Boston Crab Meat,24 - 4 oz tinss,8,Seafood,Seaweed and fish,24,tin,18.4,0
+41,41,Jack's New England Clam Chowder,12 - 12 oz canss,8,Seafood,Seaweed and fish,12,can,9.65,0
+42,42,Singaporean Hokkien Fried Mee,32 - 1 kg pkgss.,5,Grains & Cereals,"""Breads, crackers, pasta, and cereal""",32,pkg,14,1
+43,43,Ipoh Coffee,16 - 500 g tinss,1,Beverages,"""Soft drinks, coffees, teas, beers, and ales""",16,tin,46,0
+44,44,Gula Malacca,20 - 2 kg bagss,2,Condiments,"""Sweet and savory sauces, relishes, spreads, and seasonings""",20,bag,19.45,0
+45,45,Rogede sild,1k pkg.,8,Seafood,Seaweed and fish,1,pkg,9.5,0
+46,46,Spegesild,4 - 450 g glasseses,8,Seafood,Seaweed and fish,4,glass,12,0
+47,47,Zaanse koeken,10 - 4 oz boxeses,3,Confections,"""Desserts, candies, and sweet breads""",10,box,9.5,0
+48,48,Chocolade,10 pkgs.,3,Confections,"""Desserts, candies, and sweet breads""",10,pkg,12.75,0
+49,49,Maxilaku,24 - 50 g pkgss.,3,Confections,"""Desserts, candies, and sweet breads""",24,pkg,20,0
+50,50,Valkoinen suklaa,12 - 100 g barss,3,Confections,"""Desserts, candies, and sweet breads""",12,bar,16.25,0
+51,51,Manjimup Dried Apples,50 - 300 g pkgss.,7,Produce,Dried fruit and bean curd,50,pkg,53,0
+52,52,Filo Mix,16 - 2 kg boxeses,5,Grains & Cereals,"""Breads, crackers, pasta, and cereal""",16,box,7,0
+53,53,Perth Pasties,48 pieces,6,Meat & Poultry,Prepared meats,48,piece,32.8,1
+54,54,TourtiFre,16 pies,6,Meat & Poultry,Prepared meats,16,pie,7.45,0
+55,55,PGtT chinois,24 boxes x 2 pies,6,Meat & Poultry,Prepared meats,24,box,24,0
+56,56,Gnocchi di nonna Alice,24 - 250 g pkgss.,5,Grains & Cereals,"""Breads, crackers, pasta, and cereal""",24,pkg,38,0
+57,57,Ravioli Angelo,24 - 250 g pkgss.,5,Grains & Cereals,"""Breads, crackers, pasta, and cereal""",24,pkg,19.5,0
+58,58,Escargots de Bourgogne,24 pieces,8,Seafood,Seaweed and fish,24,piece,13.25,0
+59,59,Raclette Courdavault,5 kg pkg.,4,Dairy Products,Cheeses,5,pkg,55,0
+60,60,Camembert Pierrot,15 - 300 g roundss,4,Dairy Products,Cheeses,15,round,34,0
+61,61,Sirop d'Trable,24 - 500 ml bottles,2,Condiments,"""Sweet and savory sauces, relishes, spreads, and seasonings""",24,bottle,28.5,0
+62,62,Tarte au sucre,48 pies,3,Confections,"""Desserts, candies, and sweet breads""",48,pie,49.3,0
+63,63,Vegie-spread,15 - 625 g jarss,2,Condiments,"""Sweet and savory sauces, relishes, spreads, and seasonings""",15,jar,43.9,0
+64,64,Wimmers gute Semmelkn÷del,20 bags x 4 pieces,5,Grains & Cereals,"""Breads, crackers, pasta, and cereal""",20,bag,33.25,0
+65,65,Louisiana Fiery Hot Pepper Sauce,32 - 8 oz bottles,2,Condiments,"""Sweet and savory sauces, relishes, spreads, and seasonings""",32,bottle,21.05,0
+66,66,Louisiana Hot Spiced Okra,24 - 8 oz jarss,2,Condiments,"""Sweet and savory sauces, relishes, spreads, and seasonings""",24,jar,17,0
+67,67,Laughing Lumberjack Lager,24 - 12 oz bottles,1,Beverages,"""Soft drinks, coffees, teas, beers, and ales""",24,bottle,14,0
+68,68,Scottish Longbreads,10 boxes x 8 pieces,3,Confections,"""Desserts, candies, and sweet breads""",10,box,12.5,0
+69,69,Gudbrandsdalsost,10 kg pkg.,4,Dairy Products,Cheeses,10,pkg,36,0
+70,70,Outback Lager,24 - 355 ml bottles,1,Beverages,"""Soft drinks, coffees, teas, beers, and ales""",24,bottle,15,0
+71,71,Flotemysost,10 - 500 g pkgss.,4,Dairy Products,Cheeses,10,pkg,21.5,0
+72,72,Mozzarella di Giovanni,24 - 200 g pkgss.,4,Dairy Products,Cheeses,24,pkg,34.8,0
+73,73,R÷d Kaviar,24 - 150 g jarss,8,Seafood,Seaweed and fish,24,jar,15,0
+74,74,Longlife Tofu,5 kg pkg.,7,Produce,Dried fruit and bean curd,5,pkg,10,0
+75,75,Rh÷nbrSu Klosterbier,24 - 0.5 l bottles,1,Beverages,"""Soft drinks, coffees, teas, beers, and ales""",24,bottle,7.75,0
+76,76,Lakkalik÷ri,500 ml,1,Beverages,"""Soft drinks, coffees, teas, beers, and ales""",500,NULL,18,0
+77,77,Original Frankfurter Grnne So¯e,12 boxes,2,Condiments,"""Sweet and savory sauces, relishes, spreads, and seasonings""",12,box,13,0
